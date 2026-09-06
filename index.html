@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Clone</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <!-- Spotify Logo -->
+      <div class="spotify-logo">
+        <i class="fa-brands fa-spotify"></i>
+      </div>
+
+      <!-- Home -->
+      <div class="home-btn">
+        <i class="fa-solid fa-house"></i>
+      </div>
+
+      <!-- Search -->
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input type="text" placeholder="What do you want to play?" />
+
+        <i class="fa-solid fa-box-archive"></i>
+      </div>
+
+      <!-- Right Navbar -->
+      <div class="nav-right">
+        <a href="#">Premium</a>
+        <a href="#">Support</a>
+        <a href="#">Download</a>
+
+        <span class="divider"></span>
+
+        <a href="#" class="install">
+          <i class="fa-regular fa-circle-down"></i>
+          Install App
+        </a>
+
+        <a href="#">Sign up</a>
+
+        <button class="login-btn">Log in</button>
+      </div>
+    </header>
+
+    <!-- MAIN LAYOUT  -->
+
+    <main class="main-container">
+      <!-- ================= SIDEBAR ================= -->
+
+      <aside class="sidebar">
+        <div class="library-title">
+          <h3>Your Library</h3>
+
+          <button class="create-btn">
+            <i class="fa-solid fa-plus"></i>
+            Create
+          </button>
+        </div>
+
+        <!-- Playlist Box -->
+
+        <div class="sidebar-card">
+          <h3>Create your first playlist</h3>
+
+          <p>It's easy, we'll help you</p>
+
+          <button class="white-btn">Create playlist</button>
+        </div>
+
+        <!-- Podcast Box -->
+
+        <div class="sidebar-card">
+          <h3>Let's find some podcasts to follow</h3>
+
+          <p>We'll keep you updated on new episodes</p>
+
+          <button class="white-btn">Browse podcasts</button>
+        </div>
+
+        <!-- Sidebar Links -->
+
+        <div class="sidebar-links">
+          <a href="#">Legal</a>
+          <a href="#">Safety & Privacy Center</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookies</a>
+          <a href="#">About Ads</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Cookies</a>
+        </div>
+
+        <!-- Language -->
+
+        <button class="language-btn">
+          <i class="fa-solid fa-globe"></i>
+          English
+        </button>
+      </aside>
+
+      <!--  CONTENT -->
+
+      <section class="content">
+        <!-- 1. TRENDING SONGS-->
+
+        <section class="music-section">
+          <input
+            type="checkbox"
+            id="trending-toggle"
+            class="section-toggle trending-toggle"
+          />
+
+          <div class="section-header">
+            <h2>Trending songs</h2>
+            <label for="trending-toggle" class="show-all">Show all</label>
+          </div>
+
+          <div class="music-row trending-row">
+            <div class="song-card">
+              <div class="album-image">
+                <img src="./images/jannat.jpg" alt="Yeshanagula" />
+              </div>
+              <h3>Jara Sa</h3>
+              <p>Pritam and Kunal Deshmukh...</p>
+            </div>
+
+            <div class="song-card">
+              <div class="album-image">
+                <img src="./images/ye krishna hai.jpg" alt="Radhimaa" />
+              </div>
+              <h3>Woh krishna hai</h3>
+              <p>Mohit Lalwani , Bharat kamal</p>
+            </div>
+
+            <div class="song-card">
+              <div class="album-image">
+                <img
+                  src="./images/desi kalakaar.jpg"
+                  alt="Mallepoola Pallaki"
+                />
+              </div>
+              <h3>Desi kalakaar</h3>
+              <p>Yo Yo Honey Singh...</p>
+            </div>
+
+            <div class="song-card">
+              <div class="album-image">
+                <img src="./images/trea hone laga hoon.jpg" alt="Parvati" />
+              </div>
+              <h3>Tera hone Laga hoon</h3>
+              <p>Pritam , Arjit Singh</p>
+            </div>
+
+            <div class="song-card">
+              <div class="album-image">
+                <img src="./images/kalyani.jpg" alt="Kalyani" />
+              </div>
+              <h3>KALYANI</h3>
+              <p>ARJN, KDS, FIFTY4, Shreya Ghoshal</p>
+            </div>
+
+            <div class="song-card">
+              <div class="album-image">
+                <img src="./images/samnam teri kasam.jpg" alt="Mathara" />
+              </div>
+              <h3>Sanam teri kasam</h3>
+              <p>Himesh Reshamiya</p>
+            </div>
+
+            <div class="song-card trending-extra">
+              <div class="album-image">
+                <img src="./images/finding her.jpg" alt="Finding Her" />
+              </div>
+              <h3>Finding Her</h3>
+              <p>Kushagra, Bharath, Saaheal</p>
+            </div>
+
+            <div class="song-card trending-extra">
+              <div class="album-image">
+                <img src="./images/young goat.jpg" alt="Young G.O.A.T." />
+              </div>
+              <h3>Young G.O.A.T.</h3>
+              <p>Cheema Y, Gur Sidhu</p>
+            </div>
+
+            <div class="song-card trending-extra">
+              <div class="album-image">
+                <img
+                  src="./images/ultimate love song.jpg"
+                  alt="Ultimate Love Song"
+                />
+              </div>
+              <h3>Ultimate Love Song</h3>
+              <p>Arijit Singh</p>
+            </div>
+
+            <div class="song-card trending-extra">
+              <div class="album-image">
+                <img
+                  src="./images/yeh jawani hai diwaani.jpg"
+                  alt="Yeh Jawaani Hai Deewani"
+                />
+              </div>
+              <h3>Yeh Jawaani Hai Deewani</h3>
+              <p>Pritam</p>
+            </div>
+          </div>
+        </section>
+
+        <!--   2. POPULAR ARTISTS -->
+
+        <section class="music-section">
+          <input type="checkbox" id="artists-toggle" class="section-toggle" />
+          <div class="section-header">
+            <h2>Popular artists</h2>
+            <label for="artists-toggle" class="show-all">Show all</label>
+          </div>
+
+          <div class="artist-row artists-row">
+            <div class="artist-card">
+              <img src="./images/arjit singh.jpg" alt="Arijit Singh" />
+              <h3>Arijit Singh</h3>
+              <p>Artist</p>
+            </div>
+
+            <div class="artist-card">
+              <img src="./images/Ar rahman.jpg" alt="A. R. Rahman" />
+              <h3>A. R. Rahman</h3>
+              <p>Artist</p>
+            </div>
+
+            <div class="artist-card">
+              <img src="images/Yo Yo Honey singh.jpg" alt="Yo Yo Honey Singh" />
+              <h3>Yo Yo Honey Singh</h3>
+              <p>Artist</p>
+            </div>
+
+            <div class="artist-card">
+              <img src="images/guru.jpg" alt="Vishal Dadlani" />
+              <h3>Guru Randhava</h3>
+              <p>Artist</p>
+            </div>
+
+            <div class="artist-card">
+              <img src="images/kk.jpg" alt="Badshah" />
+              <h3>K.K</h3>
+              <p>Artist</p>
+            </div>
+
+            <div class="artist-card">
+              <img src="images/Pritam.jpg" alt="Sonu Nigam" />
+              <h3>Pritam</h3>
+              <p>Artist</p>
+            </div>
+          </div>
+        </section>
+
+        <!--  3. POPULAR ALBUMS AND SINGLES-->
+
+        <section class="music-section">
+          <input type="checkbox" id="albums-toggle" class="section-toggle" />
+          <div class="section-header">
+            <h2>Popular albums and singles</h2>
+            <label for="albums-toggle" class="show-all">Show all</label>
+          </div>
+
+          <div class="music-row albums-row">
+            <div class="song-card">
+              <div class="album-image">
+                <img src="images/Asiqui 2.jpg" />
+              </div>
+              <h3>Aashiqui 2</h3>
+              <p>Mithoon, Ankit Tiwari, Jeet Gannguli</p>
+            </div>
+
+            <div class="song-card">
+              <div class="album-image">
+                <img src="images/yeh jawani hai diwaani.jpg" />
+              </div>
+              <h3>Yeh Jawaani Hai Deewani</h3>
+              <p>Pritam</p>
+            </div>
+
+            <div class="song-card">
+              <div class="album-image">
+                <img src="images/samnam teri kasam.jpg" />
+              </div>
+              <h3>Sanam Teri Kasam</h3>
+              <p>Himesh Reshammiya, Sameer Anjaan</p>
+            </div>
+
+            <div class="song-card">
+              <div class="album-image">
+                <img src="images/finding her.jpg" />
+              </div>
+              <h3>Finding Her</h3>
+              <p>Kushagra, Bharath, Saaheal</p>
+            </div>
+
+            <div class="song-card">
+              <div class="album-image">
+                <img src="images/young goat.jpg" />
+              </div>
+              <h3>Young G.O.A.T.</h3>
+              <p>Cheema Y, Gur Sidhu</p>
+            </div>
+
+            <div class="song-card">
+              <div class="album-image">
+                <img src="images/raanjhan.jpg" />
+              </div>
+              <h3>Raanjhan</h3>
+              <p>Sachet-Parampara, Parampara Tandon</p>
+            </div>
+
+            <div class="song-card">
+              <div class="album-image">
+                <img src="images/ultimate love song.jpg" />
+              </div>
+              <h3>Ultimate Love</h3>
+              <p>Arijit Singh</p>
+            </div>
+          </div>
+        </section>
+
+        <!--  FOOTER-->
+
+        <footer class="footer">
+          <div class="footer-top">
+            <div class="footer-column">
+              <h3>Company</h3>
+
+              <a href="#">About</a>
+              <a href="#">Jobs</a>
+              <a href="#">For the Record</a>
+            </div>
+
+            <div class="footer-column">
+              <h3>Communities</h3>
+
+              <a href="#">For Artists</a>
+              <a href="#">Developers</a>
+              <a href="#">Advertising</a>
+              <a href="#">Investors</a>
+              <a href="#">Vendors</a>
+            </div>
+
+            <div class="footer-column">
+              <h3>Useful links</h3>
+
+              <a href="#">Support</a>
+              <a href="#">Free Mobile App</a>
+              <a href="#">Popular by Country</a>
+              <a href="#">Import your music</a>
+            </div>
+
+            <div class="footer-column">
+              <h3>Spotify Plans</h3>
+
+              <a href="#">Premium Standard</a>
+              <a href="#">Premium Platinum</a>
+              <a href="#">Premium Student</a>
+              <a href="#">Spotify Free</a>
+            </div>
+
+            <div class="social-icons">
+              <div>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+
+              <div>
+                <i class="fa-brands fa-x-twitter"></i>
+              </div>
+
+              <div>
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <span>© 2026 Spotify AB</span>
+          </div>
+        </footer>
+      </section>
+    </main>
+
+    <!-- === BOTTOM SIGNUP BAR ===-->
+
+    <div class="preview-bar">
+      <div class="preview-text">
+        <strong>Preview of Spotify</strong>
+
+        <p>
+          Sign up to get unlimited songs and podcasts with occasional ads. No
+          credit card needed.
+        </p>
+      </div>
+
+      <button class="signup-btn">Sign up for free</button>
+    </div>
+  </body>
+</html>
